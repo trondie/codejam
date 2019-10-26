@@ -30,19 +30,6 @@ using namespace  std;
                     grid[x][y] = min(min(grid[x-1][y], grid[x][y-1]), grid[x-1][y-1]) + 1;
                 }
             }
-        }
-                for (int x = 0; x < m; ++x) {
-                    cout << endl; 
-            for (int y = 0; y < n; ++y) {         
-                cout << grid[x][y] << " " ; 
-            }
-        }
-     
+        } 
         return grid[m-1][n-1]; 
     }
-
-int main(){
-
-    //
-    cout << levensteinish("meilenstein", "levenshtein") << endl; 
-}
